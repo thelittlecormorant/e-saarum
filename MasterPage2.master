@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="MasterPage2.master.cs" Inherits="MasterPage2" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <style type="text/css">
+        .wrapper .sidebar
+{
+	background-image:url('sidebar.jpg');
+   background-position:right;
+   background-repeat:no-repeat;
+	height:331px;
+	margin-left:587px;
+}
+.wrapper .sidebar .element
+{
+	color:White;
+ margin-left:10px;
+ margin-right:10px;
+	
+}
+.wrapper .sidebar .element a:link,a:visited
+{
+	text-decoration:none;
+	color:White;
+}
+.wrapper .sidebar .element a:active
+{
+	text-decoration:none;
+	color:#996600;
+	background-color:Blue;
+}
+.wrapper .content
+{
+	margin-right:230px;
+	float:left;
+}
+</style>
+<asp:ContentPlaceHolder ID="styles" runat="server">
+
+</asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="contentplaceholder1" Runat="Server">
+    <br /><br />
+  <div class="content">
+    <asp:ContentPlaceHolder ID="contentplaceholder5" runat="server">
+           
+    </asp:ContentPlaceHolder>
+    </div>
+  
+    <div class="sidebar"><br />
+        <div align="center" class="element"><a href="#">Request a material</a> </div>  <br />      
+        <div align="center" class="element"><a href="#">Submit a query</a> </div>        <br />
+        <div align="center" class="element"><a href="#">Testimonials</a> </div>        <br />
+        <div align="center" class="element"><a href="#">Experts page</a> </div>        <br />
+        <div align="center" class="element"><a href="#">Parents page</a> </div>    <br />    
+        <div align="center" class="element"><a href="#">Life at SRM</a> </div>        <br />
+        <div align="center" class="element"><a href="#">FAQs</a> </div>    
+
+
+</div>
+
+<br /><br />
+
+
+</asp:Content>
+

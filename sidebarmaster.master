@@ -1,0 +1,6 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/omegamaster.master" AutoEventWireup="false" CodeFile="sidebarmaster.master.cs" Inherits="sidebarmaster" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="contentplaceholder1" Runat="Server">
+</asp:Content>
+

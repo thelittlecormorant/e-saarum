@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>e-SaaRuM:A portal for the stateboard school students</title>
+    <link rel="Stylesheet" href="masterstyle.css" />
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="wrapper">
+        <div class="header">
+        <div class="topmenu">
+        &nbsp;&nbsp;
+        <a href="#">Courses</a>&nbsp;&nbsp;&nbsp;
+        <a href="Discussions.aspx">Discussions</a>&nbsp;&nbsp;
+        <a href="#">My Page</a>
+        </div>
+        
+        <div class="login">
+        
+        
+            <asp:LoginView ID="LoginView1" runat="server">
+                <LoggedInTemplate>
+                    Hi,
+                </LoggedInTemplate>
+                <AnonymousTemplate>
+                    click here to login
+                </AnonymousTemplate>
+            </asp:LoginView>
+            <asp:LoginName ID="LoginName1" runat="server" color="white" />
+            <asp:LoginStatus ID="LoginStatus1" runat="server"/>
+        
+        
+        </div>
+        </div>
+    <asp:ContentPlaceHolder ID="contentplaceholder1" runat="server">
+    
+    </asp:ContentPlaceHolder>
+    <div class="footer">
+    <div class="menu" align="center">
+    <a href="#">Home</a> |
+    <a href="#">Contact Us</a> |
+    <a href="#">About Us</a> |
+    <a href="#">Feedback</a> |
+    <a href="#">FAQ's</a> |
+    <a href="#">Disclaimer</a>
+    <br />
+    &copy;Project Omega Team. All rights are reserved.
+    
+    </div>
+    
+    </div>
+    
+    
+    
+    </div>
+    </form>
+</body>
+</html>
